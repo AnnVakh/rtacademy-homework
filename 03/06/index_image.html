@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive pictures</title>
+</head>
+<body>
+<p>a little bit clearer thing</p>
+
+<img srcset="images/yoda_375.JPG 375w,
+             images/yoda_812.JPG 812w,
+             images/yoda_1024.JPG 1024w,
+             images/grogu_1600.jpg 1600w"
+     sizes="(max-width: 375px) 375px,
+            (max-width: 812px) 812px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1600px) 1600px"
+     src="images/grogu_1600.jpg" alt="Grogu is watching you"
+    style="width: 100%">
+
+</body>
+</html>

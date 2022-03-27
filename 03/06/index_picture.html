@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive images</title>
+</head>
+<body>
+/*На окремій сторінці додайте два зображення за допомогою тегів <code>img</code> та <code>picture</code> (бажано >1024px за шириною)
+    2. Зробіть ці зображення адаптивними мінімум для трьох розмірів екрану/пристрою.
+3. * Додайте окремі зображення у форматі .webp для елемента <code>picture</code>, що браузер має завантажувати в першу чергу
+
+        Мобільний телефон: 360 x 640
+        ● Мобільний телефон: 375 x 667
+        ● Мобільний телефон: 360 x 720
+        ● iPhone X: 375 x 812
+        ● Pixel 2: 411 x 731
+        ● Tablet (Планшет): 768 x 1024
+        ● Laptop (Ноутбук): 1366 x 768
+        ● Настільний компʼютер (Desktop): 1920 x 1080
+        */
+</body>
+<main>
+    <picture class="container1">
+        <source srcset="images/yoda_375.JPG" media="(max-width: 374px)">
+        <source srcset="images/yoda_1024.JPG" media="(min-width: 1024px)" style="width:100%">
+        <img src="images/yoda_812.JPG" alt="GROGU">
+    </picture>
+</main>
+</html>

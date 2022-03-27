@@ -1,0 +1,36 @@
+.color1 {
+    width: 640px;
+    margin: 0;
+    padding: 40px;
+    border: none;
+    background-color: #457b9d;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+  /*  2. Додайте мета-тег viewport
+    3. Використовуючи media-запити необхідно змінювати фон цього блока в залежності від ширини екрана (перевіряти краще за допомогою емуляції пристроїв у Chrome DevTools:
+        F12 -> Ctrl+Shift+M):
+a. Починаючи з 768px колір фона має бути
+#e9c46a (Orange Yellow Crayola)
+b. З 992px колір фона має бути #f4a261 (Sandy
+Brown)
+c. З 1200px і більше - #e76f51 (Burnt Sienna)*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* ці стилі будуть застосовуватися тільки для звичайних екранів пристроїв, у яких ширина від 320px до 640px */
+    .color1 {
+        background-color: #e9c46a;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .color1 {
+        background-color: #f4a261;
+    }
+    }
+
+@media only screen and (min-width: 1200px) {
+   .color1 {
+        background-color: #e76f51;
+    }
+}

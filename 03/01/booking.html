@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOKING SHOOTING STUDIO (FOR NERDS ONLY)</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<main>
+
+    <h1>BOOKING SHOOTING STUDIO <b>(FOR NERDS ONLY)</b></h1>
+    <form action="" method="get">
+        <div>
+            <label for="surname">* Surname:</label>
+        </div>
+        <div>
+            <input type="text" id="surname" name="user_surname"
+                   placeholder="Pls tell us your surname"
+                   minlength="2" maxlength="64" required>
+        </div>
+        <div>
+            <label for="yourname">* Name:</label>
+        </div>
+        <div>
+            <input type="text" id="yourname" name="username"
+                   placeholder="Say your name, darling"
+                   minlength="2" maxlength="64" required>
+        </div>
+        <div>
+            <label for="mail">* Email:</label>
+        </div>
+        <div>
+            <input type="email" id="mail" name="usermail"
+                   placeholder="write your email pleaaaaase"
+                   minlength="6" maxlength="255" required>
+        </div>
+
+        <div>
+            <label for="phone">* Phone:</label>
+        </div>
+        <div>
+            <input type="tel" id="phone" name="userphone"
+                   placeholder="+380000000000"
+                   minlength="13" maxlength="13" required>
+        </div>
+
+        <div>
+            <label for="profile">Instagram:</label>
+        </div>
+        <div>
+            <input type="url" id="profile" name="userinsta"
+                   placeholder="https://instagram.com/user"
+                   minlength="23" maxlength="255">
+        </div>
+        <div>
+            <label for="room_select">* Room</label>
+        </div>
+        <div>
+            <select id="room_select" name="room_select" required>
+                <option value="" disabled selected>Choose the room</option>
+               <option value="officeroom">Office room</option>
+               <option value="fireplaceroom" >Cozy fireplace room</option>
+               <option value="rigroom">Rig room</option>
+            </select>
+        </div>
+        <div>
+            <label for="date_time_start">* Date&Time Start</label>
+        </div>
+        <div>
+          <input type="datetime-local" name="date_time_start"
+               min="2022-02-03T00:00" max="2023-01-01T00:00"
+               id="date_time_start" required>
+        </div>
+        <div>
+            <label for="date_time_finish">* Date&Time Finish</label>
+        </div>
+        <div>
+            <input type="datetime-local" name="date_time_finish"
+                   min="2022-02-03T00:00" max="2023-01-01T00:00"
+                   id="date_time_finish" required>
+        </div>
+        <div>
+            <label for="number_people">* Quantity of people</label>
+        </div>
+        <div>
+            <input type="number" name="number_people" id="number_people"
+                   min="1" max="10" step="1" value="2" required>
+        </div>
+        <div>
+            <label for="color_b"> Color of your mood and background</label>
+        </div>
+            <input id="color_b" type=color name="color_background" value="#000000">
+        <div>
+            <label for="message">Commentary:</label>
+        </div>
+        <div>
+            <textarea id="message" name="message" rows="5" cols="10"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="agreement" id="agreement" value="I agree with the requirements">
+            <label for="agreement">I agree with the <a href="rules.html">requirements</a></label>
+        </div>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</main>
+</body>
+
+</html>
