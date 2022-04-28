@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 6.2</title>
+</head>
+<body>
+<script>
+    //let cityName = 'киїВ';
+    // ще варіанти: "лЬвів", "одеСА", "хАРКіВ"
+    // ваш код пишіть тут
+    let cityName = 'киїВ';
+    let first =  cityName[0].toUpperCase();
+    console.log( first );
+    console.log( cityName.length );
+    let theRest = cityName.substring(1).toLowerCase();
+    console.log( theRest );
+    let cityNameCapitalized = first + theRest;
+    console.log(cityNameCapitalized);
+
+let cityNameLv = "лЬвів";
+let firstLv = cityNameLv[0].toUpperCase();
+console.log( firstLv );
+let restLv = cityNameLv.substring(1).toLowerCase();
+console.log(restLv);
+    let cityNameCapitalizedLv = firstLv + restLv;
+    console.log(cityNameCapitalizedLv);
+
+    let cityNameOd = "одеСА";
+    let firstOd = cityNameOd[0].toUpperCase();
+    console.log( firstOd );
+    let restOd = cityNameOd.substring(1).toLowerCase();
+    console.log(restOd);
+    let cityNameCapitalizedOd = firstOd + restOd;
+    console.log(cityNameCapitalizedOd);
+
+    let cityNameCh = "хАРКіВ";
+    let firstCh = cityNameCh[0].toUpperCase();
+    console.log( firstCh );
+    let restCh = cityNameCh.substring(1).toLowerCase();
+    console.log(restCh);
+    let cityNameCapitalizedCh = firstCh + restCh;
+    console.log(cityNameCapitalizedCh);
+
+    /* 6.2.*
+
+  //let cityName = 'киїВ';
+    // ще варіанти: "лЬвів", "одеСА", "хАРКіВ"
+    // ваш код пишіть тут
+     */
+
+    let nCityNameCh = "хАРКіВ";
+    let nFirstCh = nCityNameCh[0].toUpperCase();
+    console.log( nFirstCh );
+    let nRestCh = nCityNameCh.slice(1).toLowerCase();
+    console.log(nRestCh);
+    let nCityNameCapitalizedCh = nFirstCh + nRestCh;
+    console.log( nCityNameCapitalizedCh );
+
+
+    let nCityNameOd = "одеСА";
+    let nFirstOd = nCityNameOd[0].toUpperCase();
+    console.log( nFirstOd );
+    let nRestOd = nCityNameOd.substring(nCityNameOd.indexOf ('д')).toLowerCase();
+    console.log(nRestOd);
+    console.log(nCityNameOd.indexOf('е'));
+    let nCityNameCapitalizedOd = nFirstOd + nRestOd;
+    console.log(nCityNameCapitalizedOd);
+
+
+</script>
+    </body>
+</html>
