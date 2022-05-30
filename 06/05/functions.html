@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+
+        <script>
+        function showMessage( message = 'Привіт світ!' )
+        {
+        console.log( message );
+        }
+        showMessage( 'Привіт!' ); // Текст першого параметра вказано, тому відобразиться "Привіт!" showMessage(); // Текст першого параметра не вказано, тому відобразиться
+        // значення за замовчуванням "Привіт світ!"
+
+
+        function sum( a, b )
+        {
+        return a + b; // функція поверне результат складання змінних a і b
+        // (все що нижче return вже не виконається)
+        }
+        let result = sum( 1, 2 );
+        console.log( result );      // 3
+
+        </script>
+
+</body>
+</html>

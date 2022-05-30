@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+<ul>
+<div>
+    <label for="operand1"> Оперенд1 </label>
+</div>
+<div>
+    <input type="number" id="operand1" name="user_surname"
+           placeholder="100"
+           minlength >0 required>
+</div>
+<div>
+    <label for="doing"> Дія :</label>
+</div>
+<div>
+    <select id="doing" name="operation" required>
+        <option value="" disabled selected>Оберіть дію</option>
+        <option value="+">+</option>
+        <option value="-" >-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+        <option value="**">**</option>
+    </select>
+</div>
+<div>
+<label for="operand2"> Оперенд2 </label>
+</div>
+<div>
+    <input type="number" id="operand2" name="operand2"
+           placeholder=50
+           min>0>
+</div>
+<div>
+    <button type="submit">=</button>
+</div>
+    <div>
+        <label for="result"> Результат </label>
+    </div>
+    <div>
+        <output type="output" id="result" name="user_result"
+               placeholder="5000"
+                min="1" required>
+    </div>
+</ul>
+
+
+</body>
+</html>
