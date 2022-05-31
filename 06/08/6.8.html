@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.8_getRandomInt</title>
+</head>
+<body>
+<script>
+    function getRandomInt( min, max )
+    {
+        min = parseInt( min );
+        max = parseInt( max );
+        if ( min > max )
+        {
+            let temp = max;
+            max = min;
+            min = temp;
+        }
+        return Math.round(( max-min ) * Math.random()) + min;
+    }
+    let randomInt = getRandomInt( 20, 10 );
+    console.log('Випадкове число ' +  randomInt);
+</script>
+</body>
+</html>
