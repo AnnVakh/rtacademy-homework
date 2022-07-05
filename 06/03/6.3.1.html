@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6.3*</title>
+</head>
+<body>
+<script>
+
+    a = 10;
+    b = 20;
+    [a, b] = [b, a];
+    console.log(a, b);
+
+    //4 варіант.
+    a = 10;
+    b = 20;
+    a = [b, b = a][0];
+    console.log(a, b);
+
+   a = 10, b = 20;
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+
+    console.log( a, b );
+
+     a = 10, b =20;
+    b = (function(a){
+        return a
+    }(a, a=b));
+
+   console.log( a, b );
+
+</script>
+
+</body>
+</html>
