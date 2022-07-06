@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 1rem/1.2 Arial, sans-serif;
+}
+
+header {
+    display: block;
+    margin-bottom: 4rem;
+    position: sticky;
+    top: 0em;
+    left: 0em;
+}
+
+header a.logo,
+header a.logo h1 {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 1;
+    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    margin: 1.5rem 0 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+body {
+    background: #fff;
+    color: #000;
+    font: normal 1rem/1.2 Arial, sans-serif;
+    margin: 1rem 0 0 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #555;
+    text-decoration: none;
+}
+
+header,
+main,
+footer,
+footer .inner {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+
+}
+
+main div.top-article{
+    text-align: center;
+    color: #a7a7a7;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0.5rem 0 0.7rem;
+}
+
+main a.top-article {
+    text-align: center;
+    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+main .posts {
+    border-top: 0.1rem solid #000;
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main .posts  > article {
+    width: 100%;
+}
+
+main .posts .article-empty {
+    visibility: hidden;
+    display: none;
+}
+
+main .posts article .cover,
+main .posts article .title,
+main .posts article .time,
+main .posts article .description,
+main .posts article .more {
+    display: block;
+}
+
+main .posts article .cover img {
+    width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+main .posts article .title,
+main .posts article .title h2 {
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    font-weight: bold;
+}
+main .posts article .title {
+    margin-bottom: 0.7rem;
+
+}
+
+main .posts article time {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.7rem;
+}
+
+main .posts article .description {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+main .posts article .more {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    margin-bottom: 2rem;
+}
+
+main .load-more {
+    display:  block;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2;
+    background: #181b31;
+    text-transform: uppercase;
+    padding: 0.8rem  1.2rem;
+    color: #fff;
+    width: 10rem;
+    margin: 2rem auto;
+}
+
+footer {
+    background: #121528;
+    color: #808080;
+    font-size: 0.9rem;
+    line-height: 2;
+
+}
+
+    footer .inner {
+        padding: 2rem 0;
+    }
+
+    footer .inner .main a {
+        color: #fff;
+    }
+
+    footer .inner .main ul.social {
+        list-style: none;
+        display: flex;
+        margin:1rem 0;
+        line-height: 1;
+    }
+    footer .inner main ul.social li{
+        padding-right: 0.5rem;
+    }
+    footer .inner main ul.social li:last-child  {
+         padding-right: 0;
+    }
+
+footer .inner .main ul.social li img {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.5rem;
+    }
+        footer .inner .nav {
+
+
+        }
+        footer .main h3 {
+            padding: 1rem;
+        }
+        footer .inner .nav h3 {
+            color: #fff;
+            padding: 1rem 0;
+        }
+            footer .inner .nav ul {
+                list-style: none;
+                padding: 0.5rem;
+            }
+
+            footer .inner .nav ul {
+                padding: 0 0 0.5rem 0;
+            }
+                footer .inner .nav ul li a {
+                    color: #808080;
+                }
+                footer .inner .nav ul li a:hover {
+                    color: #fff;
+                }
+
+@media only screen and  (min-width: 36rem) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    }
+
+    header a.logo {
+        width: 50%;
+    }
+
+    header nav {
+        width: 50%;
+    }
+
+    header nav ul {
+        justify-content: flex-start;
+    }
+    header,
+    main,
+    footer .inner {
+        max-width: 34rem;
+    }
+
+footer .inner {
+    display: flex;
+}
+footer .inner > div {
+    width: 50%;
+}
+
+
+@media only screen and (min-width: 48rem) {
+    header,
+    main,
+    footer .inner {
+        max-width: 45rem;
+    }
+
+    main .posts > article {
+        width: 48%;
+    }
+}
+@media only screen and (min-width: 62rem) {
+    header,
+    main,
+    footer .inner {
+        max-width: 60rem;
+    }
+
+    main .posts > article,
+    main .posts > .article-empty {
+        visibility: visible;
+        display: block;
+        width: 32%;
+    }
+}
+@media only screen and (min-width: 75rem) {
+    header,
+    main,
+    footer .inner {
+        max-width: 71rem;
+    }
+}
+
+@media print {
+    main .posts > article {
+        width: 48%;
+    }
+
+    main .load-more,
+    footer {
+        display: none;
+    }
+}
