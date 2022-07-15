@@ -1,0 +1,421 @@
+* {
+    margin: 1;
+    padding: 0;
+    font: normal 1rem/1.2 'Fira Sans Extra Condensed', Arial, sans-serif;
+}
+
+header {
+    display: block;
+    margin-bottom: 4rem;
+    top: 0rem;
+    left: 0rem;
+}
+
+header a.logo,
+header a.logo h1 {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 1;
+    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    margin: 1.5rem 0 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+header nav ul li {
+    margin-right: 1rem;
+    justify-content: flex-end;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+body {
+    background: #fff;
+    color: #000;
+    font: normal 1rem/1.2 Arial, sans-serif;
+    margin: 1rem 0 0 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #555;
+    text-decoration: none;
+}
+
+
+header,
+.main-posts,
+.main-post,
+.main-post .post-content,
+footer,
+footer .inner {
+    min-width: 22.5rem;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+.main-post {
+    padding: 0;
+    margin: 0;
+}
+/* list  styles */
+.main-posts div.top-article {
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 auto 2rem auto;
+}
+
+    .main-posts a.top-article {
+        display: block;
+        text-align: center;
+        text-transform: none;
+        font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+        font-size: 2.7rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+.main-posts .posts {
+    border-top: 0.1rem solid #000;
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+    .main-posts .posts  > article {
+            width: 100%;
+        }
+
+        .main-posts .posts .article-empty {
+            visibility: hidden;
+            display: none;
+        }
+
+        .main-posts .posts article .cover,
+        .main-posts .posts article .title,
+        .main-posts .posts article .time,
+        .main-posts .posts article .description,
+        .main-posts .posts article .more {
+            display: block;
+        }
+
+        .main-posts .posts article .cover img {
+            width: 100%;
+            margin-bottom: 0.7rem;
+        }
+
+        .main-posts .posts article .title,
+        .main-posts .posts article .title h2 {
+            font-size: 1.4rem;
+            line-height: 1.3rem;
+            font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .main-posts .posts article .title {
+            margin-bottom: 0.7rem;
+
+        }
+
+        .main-posts .posts article time {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.7rem;
+        }
+
+        .main-posts .posts article .description {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .main-posts .posts article .more {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+            margin-bottom: 2rem;
+        }
+
+.main-posts .load-more {
+    display:  block;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2;
+    background: #181b31;
+    text-transform: uppercase;
+    padding: 0.8rem  1.2rem;
+    color: #fff;
+    width: 10rem;
+    margin: 2rem auto;
+}
+
+/*one article styles */
+
+.main-post .post {
+    margin: 0 0 2rem 0;
+}
+    .main-post .post .post-image {
+        position: relative;
+    }
+
+        .main-post .post .post-image img {
+                width: 100%;
+        }
+
+            .main-post .post .post-header {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .main-post .post .post-header {
+                margin: 1rem;
+            }
+            .main-post .post-header h1 {
+                font-size: 2.5rem;
+                line-height: 1.1;
+                color: #000;
+                font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+            }
+
+            .main-post .post .post-header .post-info {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: flex-start;
+                font-size: 0.9rem;
+                color: #aaa;
+                text-transform: uppercase;
+                margin: 2rem 0 0 0;
+            }
+                .main-post .post .post-header .post-info > div {
+                    margin-right: 2rem;
+                }
+
+                .main-post .post .post-header .post-info > div:last-child {
+                    margin: 0;
+                }
+
+                .main-post .post .post-header .post-info .author a,
+                .main-post .post .post-header .post-info .date time,
+                .main-post .post .post-header .post-info .category a {
+                    text-transform: none;
+                    display: block;
+                    font-size: 1rem;
+                    color: #000;
+                }
+
+    .main-post .post .post-content {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    .main-post .post .post-content img {
+            width: 100%;
+    }
+    .main-post .post .post-content .text {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+footer {
+    background: #121528;
+    color: #808080;
+    font-size: 0.9rem;
+    line-height: 2;
+
+}
+
+    footer .inner {
+        padding: 2rem 0;
+    }
+
+    footer .inner .main a {
+        color: #fff;
+    }
+
+    footer .inner .main ul.social {
+        list-style: none;
+        display: flex;
+        margin:1rem 0;
+        line-height: 1;
+    }
+    footer .inner main ul.social li{
+        padding-right: 0.5rem;
+    }
+    footer .inner main ul.social li:last-child  {
+         padding-right: 0;
+    }
+
+footer .inner .main ul.social li img {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.5rem;
+    }
+        footer .inner .nav {
+
+
+        }
+        footer .main h3 {
+            padding: 1rem;
+        }
+        footer .inner .nav h3 {
+            color: #fff;
+            padding: 1rem 0;
+        }
+            footer .inner .nav ul {
+                list-style: none;
+                padding: 0.5rem;
+            }
+
+            footer .inner .nav ul {
+                padding: 0 0 0.5rem 0;
+            }
+                footer .inner .nav ul li a {
+                    color: #808080;
+                }
+                footer .inner .nav ul li a:hover {
+                    color: #fff;
+                }
+
+@media only screen and  (min-width: 36rem) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+    }
+
+
+    header a.logo {
+        width: 50%;
+    }
+
+    header nav {
+        width: 50%;
+    }
+
+    header nav ul {
+        justify-content: flex-end;
+    }
+    header,
+    .main-posts,
+    main post .post-content,
+    footer .inner {
+        max-width: 34rem;
+    }
+
+    .main-post .post .post-header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+        .main-post .post .post-header {
+            margin: 1rem;
+        }
+
+    .main-post .post-header h1 {
+            color: #fff;
+            font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+        }
+        .main-post .post .post-header .post-info .author a,
+        .main-post .post .post-header .post-info .date time,
+        .main-post .post .post-header .post-info .category a {
+            text-transform: none;
+            display: block;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+    .main-post .post .post-content .text {
+        width: 80%;
+}
+
+footer .inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .inner > div {
+    width: 30%;
+}
+
+
+@media only screen and (min-width: 48rem) {
+    header,
+    .main-posts,
+    main post .post-content,
+    footer .inner {
+        max-width: 45rem;
+    }
+
+    .main-posts .posts > article {
+        width: 48%;
+    }
+}
+@media only screen and (min-width: 62rem) {
+    header,
+    .main-posts,
+    main post .post-content,
+    footer .inner {
+        max-width: 60rem;
+    }
+
+    .main-posts .posts > article,
+    .main-posts .posts > .article-empty {
+        visibility: visible;
+        display: block;
+        width: 32%;
+    }
+}
+@media only screen and (min-width: 75rem) {
+    header,
+    .main-posts,
+    main post .post-content,
+    footer .inner {
+        max-width: 71rem;
+    }
+}
+
+@media print {
+    .main-posts .posts > article {
+        width: 48%;
+    }
+
+    .main-posts .load-more,
+    footer {
+        display: none;
+    }
+}
