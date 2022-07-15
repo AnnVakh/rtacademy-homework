@@ -1,15 +1,14 @@
 * {
-    margin: 0;
+    margin: 1;
     padding: 0;
-    font: normal 1rem/1.2 Arial, sans-serif;
+    font: normal 1rem/1.2 'Fira Sans Extra Condensed', Arial, sans-serif;
 }
 
 header {
     display: block;
     margin-bottom: 4rem;
-    position: sticky;
-    top: 0em;
-    left: 0em;
+    top: 0rem;
+    left: 0rem;
 }
 
 header a.logo,
@@ -34,12 +33,13 @@ header nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
 }
 header nav ul li {
     margin-right: 1rem;
+    justify-content: flex-end;
 }
 
 header nav ul li:last-child {
@@ -62,33 +62,42 @@ a:hover{
     text-decoration: none;
 }
 
+
 header,
-main,
+.main-posts,
+.main-post,
+.main-post .post-content,
 footer,
 footer .inner {
+    min-width: 22.5rem;
     margin: 0 auto;
     padding: 0 0.5rem;
-
 }
 
-main div.top-article{
+.main-post {
+    padding: 0;
+    margin: 0;
+}
+/* list  styles */
+.main-posts div.top-article {
     text-align: center;
-    color: #a7a7a7;
+    color: #444;
     text-transform: uppercase;
     font-size: 1rem;
-    margin: 0.5rem 0 0.7rem;
+    margin: 0 auto 2rem auto;
 }
 
-main a.top-article {
-    text-align: center;
-    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
-    font-size: 2.5rem;
-    line-height: 2.7rem;
-    margin-bottom: 1.5rem;
-    display: block;
-}
+    .main-posts a.top-article {
+        display: block;
+        text-align: center;
+        text-transform: none;
+        font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+        font-size: 2.7rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
 
-main .posts {
+.main-posts .posts {
     border-top: 0.1rem solid #000;
     padding: 2rem 0 0 0;
     display: flex;
@@ -99,60 +108,60 @@ main .posts {
     align-items: flex-start;
 }
 
-main .posts  > article {
-    width: 100%;
-}
+    .main-posts .posts  > article {
+            width: 100%;
+        }
 
-main .posts .article-empty {
-    visibility: hidden;
-    display: none;
-}
+        .main-posts .posts .article-empty {
+            visibility: hidden;
+            display: none;
+        }
 
-main .posts article .cover,
-main .posts article .title,
-main .posts article .time,
-main .posts article .description,
-main .posts article .more {
-    display: block;
-}
+        .main-posts .posts article .cover,
+        .main-posts .posts article .title,
+        .main-posts .posts article .time,
+        .main-posts .posts article .description,
+        .main-posts .posts article .more {
+            display: block;
+        }
 
-main .posts article .cover img {
-    width: 100%;
-    margin-bottom: 0.7rem;
-}
+        .main-posts .posts article .cover img {
+            width: 100%;
+            margin-bottom: 0.7rem;
+        }
 
-main .posts article .title,
-main .posts article .title h2 {
-    font-size: 1.4rem;
-    line-height: 1.3rem;
-    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
-    font-weight: bold;
-}
-main .posts article .title {
-    margin-bottom: 0.7rem;
+        .main-posts .posts article .title,
+        .main-posts .posts article .title h2 {
+            font-size: 1.4rem;
+            line-height: 1.3rem;
+            font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .main-posts .posts article .title {
+            margin-bottom: 0.7rem;
 
-}
+        }
 
-main .posts article time {
-    font-size: 0.8rem;
-    color: #666;
-    margin-bottom: 0.7rem;
-}
+        .main-posts .posts article time {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.7rem;
+        }
 
-main .posts article .description {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    margin-bottom: 0.8rem;
-}
+        .main-posts .posts article .description {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
 
-main .posts article .more {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
-    margin-bottom: 2rem;
-}
+        .main-posts .posts article .more {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+            margin-bottom: 2rem;
+        }
 
-main .load-more {
+.main-posts .load-more {
     display:  block;
     text-align: center;
     font-size: 1rem;
@@ -164,6 +173,76 @@ main .load-more {
     width: 10rem;
     margin: 2rem auto;
 }
+
+/*one article styles */
+
+.main-post .post {
+    margin: 0 0 2rem 0;
+}
+    .main-post .post .post-image {
+        position: relative;
+    }
+
+        .main-post .post .post-image img {
+                width: 100%;
+        }
+
+            .main-post .post .post-header {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .main-post .post .post-header {
+                margin: 1rem;
+            }
+            .main-post .post-header h1 {
+                font-size: 2.5rem;
+                line-height: 1.1;
+                color: #000;
+                font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+            }
+
+            .main-post .post .post-header .post-info {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: flex-start;
+                font-size: 0.9rem;
+                color: #aaa;
+                text-transform: uppercase;
+                margin: 2rem 0 0 0;
+            }
+                .main-post .post .post-header .post-info > div {
+                    margin-right: 2rem;
+                }
+
+                .main-post .post .post-header .post-info > div:last-child {
+                    margin: 0;
+                }
+
+                .main-post .post .post-header .post-info .author a,
+                .main-post .post .post-header .post-info .date time,
+                .main-post .post .post-header .post-info .category a {
+                    text-transform: none;
+                    display: block;
+                    font-size: 1rem;
+                    color: #000;
+                }
+
+    .main-post .post .post-content {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    .main-post .post .post-content img {
+            width: 100%;
+    }
+    .main-post .post .post-content .text {
+        width: 100%;
+        margin: 0 auto;
+    }
+
 
 footer {
     background: #121528;
@@ -231,10 +310,10 @@ footer .inner .main ul.social li img {
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: center;
-        justify-content: space-between;
         align-items: center;
     }
     }
+
 
     header a.logo {
         width: 50%;
@@ -245,42 +324,77 @@ footer .inner .main ul.social li img {
     }
 
     header nav ul {
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
     header,
-    main,
+    .main-posts,
+    main post .post-content,
     footer .inner {
         max-width: 34rem;
     }
 
+    .main-post .post .post-header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+        .main-post .post .post-header {
+            margin: 1rem;
+        }
+
+    .main-post .post-header h1 {
+            color: #fff;
+            font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+        }
+        .main-post .post .post-header .post-info .author a,
+        .main-post .post .post-header .post-info .date time,
+        .main-post .post .post-header .post-info .category a {
+            text-transform: none;
+            display: block;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+    .main-post .post .post-content .text {
+        width: 80%;
+}
+
 footer .inner {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
 footer .inner > div {
-    width: 50%;
+    width: 30%;
 }
 
 
 @media only screen and (min-width: 48rem) {
     header,
-    main,
+    .main-posts,
+    main post .post-content,
     footer .inner {
         max-width: 45rem;
     }
 
-    main .posts > article {
+    .main-posts .posts > article {
         width: 48%;
     }
 }
 @media only screen and (min-width: 62rem) {
     header,
-    main,
+    .main-posts,
+    main post .post-content,
     footer .inner {
         max-width: 60rem;
     }
 
-    main .posts > article,
-    main .posts > .article-empty {
+    .main-posts .posts > article,
+    .main-posts .posts > .article-empty {
         visibility: visible;
         display: block;
         width: 32%;
@@ -288,18 +402,19 @@ footer .inner > div {
 }
 @media only screen and (min-width: 75rem) {
     header,
-    main,
+    .main-posts,
+    main post .post-content,
     footer .inner {
         max-width: 71rem;
     }
 }
 
 @media print {
-    main .posts > article {
+    .main-posts .posts > article {
         width: 48%;
     }
 
-    main .load-more,
+    .main-posts .load-more,
     footer {
         display: none;
     }
